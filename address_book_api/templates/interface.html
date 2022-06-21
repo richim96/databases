@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Riccardo Mei">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interface</title>
+
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    <script src="static/myjs.js"></script>
+</head>
+<body>
+
+  <script> testApi() </script>
+
+  <h1>Add user</h1>
+  <form action="/registra" method="post">
+    <div>
+      <label for="nome">First name:</label>
+      <input type="text" name="nome" id="nome"
+        placeholder="Your first name" value="{{ nome }}">
+    </div>
+
+    <div>
+      <label for="cognome">Last name:</label>
+      <input type="text" name="cognome" id="cognome"
+        placeholder="Your last name..." value="{{ cognome }}">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email"
+        placeholder="Your email..." value="{{ email }}">
+    </div>
+
+    <div>
+      <label for="telefono">Phone number:</label>
+      <input type="tel" name="telefono" id="telefono"
+        placeholder="Your phone number..." value="{{ telefono }}">
+    </div>
+
+    <div>
+      <input type="submit" value="Register">
+    </div>
+  </form>
+
+</body>
+</html>
